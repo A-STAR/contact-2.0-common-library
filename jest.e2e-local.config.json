@@ -1,0 +1,14 @@
+{
+  "globalSetup": "./e2e/setup-local.js",
+  "globalTeardown": "./e2e/teardown.js",
+  "moduleFileExtensions": [
+    "js",
+    "ts"
+  ],
+  "setupTestFrameworkScriptFile": "<rootDir>/e2e/jest-setup.e2e.ts",
+  "testEnvironment": "./e2e/puppeteer_environment.js",
+  "testRegex": "\\.e2e-spec\\.ts$",
+  "transform": {
+    "\\.ts$": "<rootDir>/e2e/preprocessor.js"
+  }
+}
