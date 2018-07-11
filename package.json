@@ -5,9 +5,13 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "jest -c jest.config.json",
+    "test:update": "jest -c jest.config.json -u",
+    "test:ci": "jest -c jest.config.json --runInBand",
+    "test:watch": "jest -c jest.config.json --watch",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "jest -c jest.e2e-local.config.json --runInBand",
+    "e2e:ci": "jest -c jest.e2e-ci.config.json --runInBand"
   },
   "private": true,
   "dependencies": {
