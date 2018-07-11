@@ -4,6 +4,8 @@
     "outDir": "../out-tsc/spec",
     "module": "commonjs",
     "types": [
+      "jest",
+      "puppeteer",
       "node"
     ]
   },
