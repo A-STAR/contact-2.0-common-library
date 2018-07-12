@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "conco",
+      "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
           "styleext": "scss",
@@ -120,7 +120,7 @@
       "root": "projects/contact2-common-lib",
       "sourceRoot": "projects/contact2-common-lib/src",
       "projectType": "library",
-      "prefix": "conc",
+      "prefix": "co",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",

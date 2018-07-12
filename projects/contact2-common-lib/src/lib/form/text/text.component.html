@@ -1,0 +1,13 @@
+<label>
+  <co-label [isRequired]="isRequired" [text]="label"></co-label>
+  <div>
+    <input
+      #input
+      type="text"
+      [disabled]="disabled"
+      [ngModel]="value"
+      (focusout)="onFocusOut()"
+      (ngModelChange)="onChange($event)"
+    />
+  </div>
+</label>

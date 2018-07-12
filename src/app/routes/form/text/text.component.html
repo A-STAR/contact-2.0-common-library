@@ -1,0 +1,11 @@
+<div [formGroup]="form">
+
+  <co-text formControlName="text1" label="Text Input"></co-text>
+  <pre>{{ this.form.get('text1').errors | json }}</pre>
+
+  <co-text formControlName="text2" label="Text Input with Value"></co-text>
+  <pre>{{ this.form.get('text2').errors | json }}</pre>
+
+  <co-text formControlName="text3" label="Required Text Input" [isRequired]="true"></co-text>
+  <pre>{{ this.form.get('text3').errors | json }}</pre>
+</div>
