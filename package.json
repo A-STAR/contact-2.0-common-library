@@ -11,8 +11,10 @@
     "test:ci": "jest -c jest.config.json --runInBand",
     "test:watch": "jest -c jest.config.json --watch",
     "lint": "ng lint",
-    "e2e": "jest -c jest.e2e-local.config.json --runInBand",
-    "e2e:ci": "jest -c jest.e2e-ci.config.json --runInBand"
+    "e2e:window": "jest -c jest.e2e-local.config.json --runInBand",
+    "e2e:headless": "jest -c jest.e2e-ci.config.json --runInBand",
+    "e2e": "start-server-and-test start http-get://localhost:4200 e2e:window",
+    "e2e:ci": "start-server-and-test start http-get://localhost:4200 e2e:headless"
   },
   "private": true,
   "dependencies": {
@@ -36,6 +38,7 @@
     "@angular/compiler-cli": "^6.0.3",
     "@angular/language-service": "^6.0.3",
     "@types/jest": "^23.1.5",
+    "@types/jest-image-snapshot": "^2.4.0",
     "@types/node": "~8.9.4",
     "@types/puppeteer": "^1.5.0",
     "codelyzer": "~4.2.1",
@@ -44,6 +47,7 @@
     "jest-preset-angular": "^5.2.3",
     "ng-packagr": "^3.0.0-rc.2",
     "puppeteer": "^1.5.0",
+    "start-server-and-test": "^1.5.0",
     "ts-node": "~5.0.1",
     "tsickle": ">=0.25.5",
     "tslib": "^1.7.1",
