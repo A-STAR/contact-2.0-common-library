@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:lib": "ng build contact2-common-lib",
     "test": "jest -c jest.config.json",
     "test:update": "jest -c jest.config.json -u",
     "test:ci": "jest -c jest.config.json --runInBand",
