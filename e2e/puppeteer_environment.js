@@ -29,8 +29,7 @@ class PuppeteerEnvironment extends NodeEnvironment {
 
     this.global.__BROWSER__ = browser;
     this.global.__PAGE__ = page;
-    // this.global.__URL__ = 'http://appservertest.luxbase.int:4400';
-    this.global.__URL__ = 'http://localhost:4201';
+    this.global.__URL__ = 'http://localhost:4200';
   }
 
   async teardown() {
