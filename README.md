@@ -1,4 +1,4 @@
-# Contact 2 Common
+# Contact 2.0 Common Library
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
